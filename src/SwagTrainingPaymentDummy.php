@@ -107,7 +107,7 @@ class SwagTrainingPaymentDummy extends Plugin
         /** @var EntityRepositoryInterface $paymentRepository */
         $paymentRepository = $this->container->get('payment_method.repository');
 
-        $paymentCriteria = (new Criteria())->addFilter(new EqualsFilter('example', ExamplePayment::class));
+        $paymentCriteria = (new Criteria())->addFilter(new EqualsFilter('name', ExamplePayment::class));
         $paymentIds = $paymentRepository->searchIds($paymentCriteria, Context::createDefaultContext());
 
         if ($paymentIds->getTotal() === 0) {
