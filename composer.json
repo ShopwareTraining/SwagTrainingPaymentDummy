@@ -1,0 +1,18 @@
+{
+  "name": "swag-training/payment-dummy",
+  "description": "Example payment",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "SwagTraining\\PaymentDummy\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "SwagTraining\\PaymentDummy\\SwagTrainingPaymentDummy",
+    "label": {
+      "de-DE": "Example payment",
+      "en-GB": "Example payment"
+    }
+  }
+}
